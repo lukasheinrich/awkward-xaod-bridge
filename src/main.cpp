@@ -38,6 +38,9 @@ class JetTool {
         double calibrate(const Jet& j){
             return j.pt()+j.eta();
         }
+        std::vector<double> calibrate(const JetContainer& c){
+            std::vector<double> v;
+        }
 };
 
 JetTool jet_tool;

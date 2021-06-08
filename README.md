@@ -36,3 +36,10 @@
 python -m pip install -e .[test]
 python -m pytest -ra
 ```
+
+```
+import awkward_xaod_bridge as xaodbridge
+import awkward as ak
+jets = ak.Record({'pt': [1,2,3], 'eta': [4,5,6]})
+xaodbridge.calibrate(jets['pt'],jets['eta'])
+```
