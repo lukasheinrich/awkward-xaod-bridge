@@ -30,3 +30,9 @@
 [rtd-badge]:                https://readthedocs.org/projects/awkward-xaod-bridge/badge/?version=latest
 [rtd-link]:                 https://awkward-xaod-bridge.readthedocs.io/en/latest/?badge=latest
 [sk-badge]:                 https://scikit-hep.org/assets/images/Scikit--HEP-Project-blue.svg
+
+
+```
+python -m pip install -e .[test]
+python -m pytest -ra
+```
