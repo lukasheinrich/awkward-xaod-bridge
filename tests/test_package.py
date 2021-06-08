@@ -1,11 +1,9 @@
-import awkward_xaod_bridge as m
-import awkward_xaod_bridge._core as cpp
+import awkward_xaod_bridge as xaodbridge
 
 
 def test_pybind11():
-    assert cpp.add(1, 2) == 3
-    assert cpp.subtract(1, 2) == -1
+    assert xaodbridge.calibrate([1,2,3], [4,5,6]).tolist() == [5,7,9]
 
 
 def test_version():
-    assert m.__version__
+    assert xaodbridge.__version__
